@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/set_top"
+        layout="@layout/top"></include>
+    <TextView
+        android:id="@+id/set_tv"
+        android:text="播放音乐"
+        android:layout_below="@id/set_top"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<RelativeLayout
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/setting_btn4_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="开启" />
+
+    <Button
+        android:id="@+id/setting_btn5_remuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_btn4_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/setting_btn6_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_btn5_remuse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="关闭" />
+
+    <Button
+        android:layout_below="@id/setting_btn6_end"
+        android:id="@+id/set_purple"
+        android:background="@color/settingcolor3"
+        android:text="颜色1"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_gold"
+        android:layout_marginTop="20dp"
+        android:background="@color/settingcolor2"
+        android:layout_below="@id/set_purple"
+        android:text="颜色2"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/set_green"
+        android:background="@color/settingcolor1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/set_gold"
+        android:text="颜色3"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</RelativeLayout>

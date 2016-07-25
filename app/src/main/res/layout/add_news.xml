@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/add_nws_top_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <include android:id="@+id/add_top"
+        layout="@layout/top"></include>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_news_tab_rl"
+        android:layout_below="@id/add_nws_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/add_news_tab_tv"
+            android:text="当前标签"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/add_news_nowtab_rl"
+            android:layout_below="@id/add_news_tab_tv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <GridView
+                android:id="@+id/add_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </GridView>
+        </RelativeLayout>
+        <TextView
+            android:textSize="20dp"
+            android:text="添加兴趣标签"
+            android:layout_below="@id/add_news_nowtab_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/add_news_tab_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/add_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>
+</RelativeLayout>

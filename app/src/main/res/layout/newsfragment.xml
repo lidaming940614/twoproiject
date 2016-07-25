@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.design.widget.TabLayout
+    android:id="@+id/news_tablayout_tl"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginRight="45dp"
+    app:tabMode="scrollable"
+    >
+</android.support.design.widget.TabLayout>
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/news_img_add"
+            android:layout_centerInParent="true"
+            android:background="@drawable/news_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_listview_rl"
+        android:layout_below="@id/news_tablayout_tl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/news_viewpager_vp"
+            layout="@layout/viewpager">
+        </include>
+    </RelativeLayout>
+</RelativeLayout>
